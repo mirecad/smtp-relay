@@ -7,5 +7,5 @@ RUN CGO_ENABLED=0 go build -o /smtp-relay .
 
 FROM alpine:3.19
 COPY --from=build /smtp-relay /smtp-relay
-EXPOSE 587
+EXPOSE 25
 ENTRYPOINT ["/smtp-relay"]

@@ -65,7 +65,7 @@ func (s *session) Logout() error {
 func main() {
 	port := os.Getenv("SMTP_PORT")
 	if port == "" {
-		port = "587"
+		port = "25"
 	}
 
 	domain := os.Getenv("SMTP_DOMAIN")

@@ -53,7 +53,7 @@ az container create \
   --os-type Linux \
   --cpu 0.5 \
   --memory 0.5 \
-  --ports 587 \
+  --ports 25 \
   --protocol TCP \
   --dns-name-label "$DNS_LABEL" \
   --assign-identity "$IDENTITY_ID" \
@@ -71,7 +71,7 @@ echo ""
 echo "==> Deployed successfully!"
 echo "    Image:  $VERSIONED_IMAGE"
 echo "    FQDN:   $FQDN"
-echo "    Port:   587"
+echo "    Port:   25"
 echo ""
-echo "    Test with:  swaks --to test@example.com --from sender@example.com --server $FQDN --port 587"
+echo "    Test with:  swaks --to test@example.com --from sender@example.com --server $FQDN --port 25"
 echo "    View logs:  az container logs -g $RESOURCE_GROUP -n $CONTAINER_NAME --follow"
