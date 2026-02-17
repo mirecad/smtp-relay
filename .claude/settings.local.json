@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git ls-tree:*)",
+      "Bash(git config:*)",
+      "Bash(git -C /home/miros/LOCAL/smtp-relay log --oneline -5)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "Bash(go mod init:*)",
+      "Bash(go get:*)",
+      "Bash(go build:*)"
+    ]
+  }
+}
