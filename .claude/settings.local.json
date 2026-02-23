@@ -8,7 +8,10 @@
       "WebSearch",
       "Bash(go mod init:*)",
       "Bash(go get:*)",
-      "Bash(go build:*)"
+      "Bash(go build:*)",
+      "mcp__plugin_atlassian_atlassian__getAccessibleAtlassianResources",
+      "mcp__plugin_atlassian_atlassian__getConfluencePage",
+      "mcp__plugin_atlassian_atlassian__updateConfluencePage"
     ]
   }
 }
